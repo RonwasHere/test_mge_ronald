@@ -1,16 +1,10 @@
 # test_mge_ronald
 
-A new Flutter project.
+soal test programmer apps di morning glory enterprise
 
-## Getting Started
+soal pdf = 
+[Soal Tes Programmer Apps.pdf](https://github.com/RonwasHere/test_mge_ronald/files/11341551/Soal.Tes.Programmer.Apps.pdf)
 
-This project is a starting point for a Flutter application.
+![image](https://user-images.githubusercontent.com/97945445/234812486-e279d600-41cb-4b40-8adc-4b55c788f228.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
