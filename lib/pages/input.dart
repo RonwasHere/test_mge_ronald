@@ -73,11 +73,13 @@ class _InputState extends State<Input> {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
+              //print sesuai inputan
               child: Text('Teks Asli : ' + nameController.text),
             ),
             SizedBox(height: 5),
             Padding(
               padding: const EdgeInsets.all(8.0),
+              //print inputan, tapi huruf a jadi huruf o
               child: Text(
                   'A jadi O : ' + nameController.text.replaceAll('a', 'o')),
             ),
