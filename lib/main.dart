@@ -5,7 +5,7 @@ import 'package:test_mge_ronald/pages/image.dart';
 import 'package:test_mge_ronald/pages/input.dart';
 import 'package:test_mge_ronald/pages/list.dart';
 import 'package:test_mge_ronald/pages/shared.dart';
-import 'package:test_mge_ronald/pages/testrow.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
       home: MaterialApp(
         routes: {
           '/': (context) => Awal(),
-          // '/': (context) => TestRow(),
           '/input': (context) => Input(),
           '/list': (context) => ListPage(),
           '/image': (context) => ImagePage(),
