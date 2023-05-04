@@ -23,11 +23,14 @@ class _InputState extends State<Input> {
   //method untuk bagian kedua
   void keluar() {
     setState(() {
-      angkaController.text;
+      text = angkaController.text;
+      text = NumberFormat('#,###').format(int.parse(text));
     });
   }
 
   //method untuk desimal 3 angka di depan coma
+  String text = '';
+  // int number = 123456789;
 
   @override
   Widget build(BuildContext context) {
@@ -116,6 +119,7 @@ class _InputState extends State<Input> {
                 Container(
                   width: 200,
                   child: TextFormField(
+                    keyboardType: TextInputType.number,
                     controller: angkaController,
                     decoration: InputDecoration(
                       labelText: "Input Angka",
@@ -156,18 +160,13 @@ class _InputState extends State<Input> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               //print inputan, tapi 3 angka dibelakang
-              child: Text('Format : ' +
-                  NumberFormat.currency(locale: "id_ID")
-                      .format(123456)
-                      .toString()),
+              child: Text('Format : ' + text),
             ),
 
             SizedBox(height: 5),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Angka Pangkat : ' + nameController.text.toLowerCase(),
-              ),
+              child: Text('Angka Pangkat : ' + angkaController.text),
             ),
           ],
         ),

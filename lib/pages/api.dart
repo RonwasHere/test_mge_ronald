@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:test_mge_ronald/model/user_album.dart';
+import 'package:http/http.dart' as http;
 
-class ApiPage extends StatelessWidget {
+class ApiPage extends StatefulWidget {
   const ApiPage({Key? key}) : super(key: key);
+
+  @override
+  State<ApiPage> createState() => _ApiPageState();
+}
+
+class _ApiPageState extends State<ApiPage> {
+  //to hold respon
+  late UserAlbum userAlbum;
 
   @override
   Widget build(BuildContext context) {
